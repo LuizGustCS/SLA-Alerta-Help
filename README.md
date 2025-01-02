@@ -1,15 +1,39 @@
-Funcionalidades:
-Cores para indicar o tempo restante para a violação do SLA:
-Verde: > 20 horas
-Laranja: <= 20 horas
-Vermelho: <= 5 horas
+# Jira SLA Alerta  
+
+**Jira SLA Alerta** é uma extensão para Google Chrome projetada para facilitar o acompanhamento de SLAs no Jira, colorindo os cards conforme o tempo restante.  
+
 ---
-Como Usar:
- + Instale a extensão no Google Chrome.
- + Acesse o Jira e a extensão irá automaticamente colorir os cards conforme o SLA.
- + Atenção: Antes de usar, é necessário alterar o domínio do Jira e os IDs no código, pois a estrutura pode variar entre diferentes instâncias do Jira.
- + As cores são aplicadas à medida que os cards aparecem na tela.
---
-Como Personalizar:
-Altere as classes de elementos, o domínio e os IDs das variáveis conforme necessário para o seu ambiente Jira.
-A funcionalidade pode ser aprimorada e outras features podem ser adicionadas, como novos tipos de alertas ou integração com outras métricas.
+
+## Legenda de Cores e Horas Restantes  
+
+A extensão utiliza as seguintes cores para destacar os SLAs:  
+
+- **Verde**: Mais de 20 horas restantes.  
+- **Laranja**: 20 horas ou menos restantes.  
+- **Vermelho**: 5 horas ou menos restantes.  
+
+---
+
+## Como Instalar  
+
+Siga os passos abaixo para instalar a extensão:  
+
+1. Baixe os arquivos da extensão como um arquivo ZIP.  
+2. Extraia o conteúdo do arquivo ZIP para uma pasta em seu computador.  
+3. Abra o **Google Chrome** e acesse `chrome://extensions/`.  
+4. Ative o **Modo Desenvolvedor** no canto superior direito.  
+5. Clique em **Carregar sem Compactação**.  
+6. Selecione a pasta onde o código foi extraído.  
+7. A extensão **Jira SLA Alerta** aparecerá na lista de extensões instaladas.  
+
+### Configuração  
+
+1. Abra o Jira no seu navegador.  
+2. Clique no ícone de extensões no Chrome.  
+3. Localize a opção de configuração da extensão **Jira SLA Alerta**.  
+4. Habilite a permissão para "Ler e alterar dados do site".  
+5. Certifique-se de selecionar o domínio do Jira utilizado e deixar selecionado.  
+
+--- 
+
+Contribuições são bem-vindas!  

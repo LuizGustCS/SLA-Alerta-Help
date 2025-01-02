@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "Jira SLA Alert",
+    "version": "1.0",
+    "description": "Destaca os SLAs dos cards do Jira com cores baseadas no tempo restante para a violação",
+    "permissions": ["activeTab"],
+    "host_permissions": ["https://*.atlassian.net/*"],
+    "content_scripts": [
+      {
+        "matches": ["https://*.atlassian.net/jira/servicedesk/*"],
+        "js": ["content.js"],
+        "css": ["styles.css"]
+      }
+    ]
+  }
+  
